@@ -97,6 +97,17 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.11.0</version>
+		</dependency>
+		<dependency>
+			<groupId>io.jenkins.plugins</groupId>
+			<artifactId>ionicons-api</artifactId>
+		</dependency>
+
+		<!-- test dependencies -->
+		<dependency>
 			<groupId>org.hamcrest</groupId>
 			<artifactId>hamcrest-library</artifactId>
 			<version>2.2</version>
@@ -113,19 +124,23 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>commons-io</groupId>
-			<artifactId>commons-io</artifactId>
-			<version>2.11.0</version>
+			<groupId>io.jenkins</groupId>
+			<artifactId>configuration-as-code</artifactId>
+			<version>${configuration-as-code.version}</version>
+			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>io.jenkins.plugins</groupId>
-			<artifactId>ionicons-api</artifactId>
+			<groupId>io.jenkins.configuration-as-code</groupId>
+			<artifactId>test-harness</artifactId>
+			<version>${configuration-as-code.version}</version>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<jenkins.version>2.346.1</jenkins.version>
+		<configuration-as-code.version>1569.vb_72405b_80249</configuration-as-code.version>
 		<!-- 		<jenkins-test-harness.version>2.13</jenkins-test-harness.version> -->
 	</properties>
 
