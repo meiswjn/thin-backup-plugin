@@ -17,5 +17,5 @@
  -->
 <?jelly escape-by-default='true'?>
 <div>
-  Backups the most important global and job specific configuration files. 
+  Periodically backups global and job specific configuration files.
 </div>
